@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.svg">
     <title>Document</title>
     <link rel="stylesheet" href="styles/home.css">
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
         <div class="logo">
             <img src="assets/logo.svg" alt="Logo do projeto">
         </div>
@@ -19,8 +20,8 @@
                 <h1>SoundSafe</h1>
             </div>
         </div>
-    </div>
-    <div class="container">
+    </section>
+    <section class="container">
         <div class="travessias">
             <img src="assets/travessias.svg" alt="Logo do projeto">
         </div>
@@ -33,7 +34,228 @@
                     visuais</p>
             </div>
         </div>
-    </div>
+    </section>
+
+
+    <section class="wrapper">
+        <div class="conteiner">
+
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card cd1">
+                <div class="row">
+                    <div class="icon title"></div>
+                    <div class="description">
+                        <h4>Segurança</h4>
+                        <p>Nossso semaforo vai proporcionar mais segurança por meio de nao sei que nao sei o que la</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card cd2">
+                <div class="row">
+                    <div class="icon"></div>
+                    <div class="description">
+                        <h4>Confiança</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                            elit. Aperiam in, veritatis sint obcaecati facilis 
+                            quas iste ratione id optio nisi, maxime possimus ex 
+                            qui, minus iure blanditiis ad! Qui, nostrum?</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card cd3">
+                <div class="row">
+                    <div class="icon title"></div>
+                    <div class="description">
+                        <h4>Acessibilidade</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                            elit. Aperiam in, veritatis sint obcaecati facilis 
+                            quas iste ratione id optio nisi, maxime possimus ex 
+                            qui, minus iure blanditiis ad! Qui, nostrum?</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+        </label>
+    </section>
+    <!--
+     <section class="conteiner">
+        <div class="cards row">
+            <div class="card row">
+                <div class="card_body">
+                    <div class="title">
+                        <h2>Segurança</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Id tempore impedit voluptas accusamus natus magnam vel 
+                        sint reiciendis, dignissimos facere doloremque velit modi 
+                        delectus quos. Velit eveniet corporis laboriosam omnis!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards row">
+            <div class="card2 row">
+                <div class="card_body">
+                    <div class="title">
+                        <h2>Confiança</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Id tempore impedit voluptas accusamus natus magnam vel 
+                        sint reiciendis, dignissimos facere doloremque velit modi 
+                        delectus quos. Velit eveniet corporis laboriosam omnis!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards row">
+            <div class="card3 row">
+                <div class="card_body">
+                    <div class="title">
+                        <h2>Acessibilidade</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Id tempore impedit voluptas accusamus natus magnam vel 
+                        sint reiciendis, dignissimos facere doloremque velit modi 
+                        delectus quos. Velit eveniet corporis laboriosam omnis!</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+    /*CSS CARDS */
+
+    .row
+{
+    display: flex;
+    
+}
+.conteiner
+{
+    display: flex;
+    gap: 5rem;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 90%;
+}
+.cards{
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em 0;
+}
+.card, .card2,.card3{
+    align-items: flex-end;
+    background-color: #232323;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    cursor: pointer;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 200px;
+}
+.card:hover{
+    max-width: 100%;
+    width: 100%;
+    background-image: url(https://th.bing.com/th/id/OIP.y6lyIO8EEJ6cgvyj_KXTiQHaFP?rs=1&pid=ImgDetMain);
+    transition: width 0.5s ease-in-out;
+}
+.card2:hover{
+    max-width: 100%;
+    width: 100%;
+    background-image: url(https://th.bing.com/th/id/OIP.JS6tyRYIIWQT0NPdV3rSiQHaE6?rs=1&pid=ImgDetMain);
+    transition: width 0.5s ease-in-out;
+}
+.card3:hover{
+    max-width: 100%;
+    width: 100%;
+    background-image: url(https://a.cdn-hotels.com/gdcs/production75/d1821/443b14b1-8d56-4d6a-a600-23dd50147f05.jpg);
+    transition: width 0.5s ease-in-out;
+}
+.card_body{
+    background: linear-gradient(180deg, rgba(45,45,45,0)0%, #000000 100%);
+    padding: 4em;
+}
+.title{
+    background: linear-gradient(180deg, rgba(45,45,45,0)0%, #2d2d2d 100%);
+    position: absolute;
+    inset: 0;
+}
+.card:hover .title{
+    all: unset;
+}
+.card2:hover .title{
+    all: unset;
+}
+.card3:hover .title{
+    all: unset;
+}
+.title h2
+{
+    color: white;
+    font-size: clamp(38px,5vw,48px);
+    margin: 0;
+    text-transform: uppercase;
+    transform: rotate(-90deg) translateX(-390px);
+    white-space: nowrap;
+}
+.card:hover h2
+{
+    padding-bottom: 0.5em;
+    transform: unset;
+}
+.card2:hover h2
+{
+    padding-bottom: 0.5em;
+    transform: unset;
+}
+.card3:hover h2
+{
+    padding-bottom: 0.5em;
+    transform: unset;
+}
+.card_body p
+{
+    color: white;
+    font-size: 18px;
+    margin:0;
+    max-height: 0;
+    opacity: 0;
+    position: absolute;
+    transition: max-height 0.3s ease-in-out;
+}
+.card:hover p{
+    position: relative;
+    opacity: 1;
+    max-height: 100%;
+    transition-delay: 0.3s;
+}
+.card2:hover p{
+    position: relative;
+    opacity: 1;
+    max-height: 100%;
+    transition-delay: 0.3s;
+}
+.card3:hover p{
+    position: relative;
+    opacity: 1;
+    max-height: 100%;
+    transition-delay: 0.3s;
+}
+
+    -->
+   
 </body>
 
 </html>
