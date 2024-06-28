@@ -210,6 +210,31 @@ input:checked + .card[for="c3"]{
     }
 }
 @media (max-width: 500px) {
+    .logo, .travessias{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .pjct-title h2
+    {
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+
+    .item
+    {
+        font-size: 20px;
+    }
+    .informations h2
+    {
+        font-size: 4rem;
+    }
+
     .description p
     {
         font-size: 18px;
@@ -229,7 +254,7 @@ input:checked + .card[for="c3"]{
     }
     .conteiner
     {
-        height: 90vh;
+        height: 100%;
         display: flex;
         width: 100%;
         gap: 2rem;
