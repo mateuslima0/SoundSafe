@@ -209,3 +209,37 @@ input:checked + .card[for="c3"]{
         font-size: 24px;
     }
 }
+@media (max-width: 500px) {
+    .description p
+    {
+        font-size: 18px;
+        padding-top: 0px;
+    }
+    .description h4{
+        font-size: 1.5rem;
+    }
+    input:checked + label
+    {
+        height: 100%;
+    }
+    .card> .row > .description
+    {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .conteiner
+    {
+        height: 90vh;
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .wrapper{
+        padding: 20px;
+    }
+}
