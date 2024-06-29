@@ -116,6 +116,7 @@ h1 {
     width: 350px;
     border-radius: 30px;
     background-size: cover;
+    background-position: center;
     cursor: pointer;
     overflow: hidden;
     margin:  0 10px;
@@ -135,6 +136,10 @@ h1 {
 .cd3
 {
     background-image: url(../assets/Acessibilidade.png);
+}
+.cd4
+{
+    background-image: url(../assets/Nescessidade.png);
 }
 .card > .row
 {
@@ -196,6 +201,9 @@ input:checked + .card[for="c3"]{
     background-image: url(https://a.cdn-hotels.com/gdcs/production75/d1821/443b14b1-8d56-4d6a-a600-23dd50147f05.jpg);
 }
 
+input:checked + .card[for="c4"]{
+    background-image: url(https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2019/04/homem-cego-rua-getty-800x450.jpg);
+}
 
 /*Responsividade*/
 @media (max-width: 1500px) {
@@ -206,7 +214,7 @@ input:checked + .card[for="c3"]{
         font-size: 5rem;
     }
     .text {
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 @media (max-width: 500px) {
@@ -267,6 +275,25 @@ input:checked + .card[for="c3"]{
     .wrapper{
         padding: 20px;
     }
+
+    .cd1
+{
+    background-image: url(../assets/segurança-Mobile.png);
+}
+.cd2
+{
+    background-image: url(../assets/Confiança-Mobile.png);
+}
+.cd3
+{
+    background-image: url(../assets/Acessibilidade-Mobile.png);
+}
+.cd4
+{
+    background-image: url(../assets/Nescessidade-Mobile.png);
+}
+
+
 }
 @media (max-width: 380px) {
     .pjct-title, .informations{
