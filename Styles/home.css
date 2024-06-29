@@ -10,6 +10,7 @@
     border: 0;
     font-family: 'Rubik', sans-serif;
     line-height: 1.2;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -36,6 +37,53 @@ body {
     width: 100%;
     color: #F5F5F5;
 }
+header
+{
+    position: fixed;
+    width: 100%;
+    padding: 15px 50px;
+    z-index: 200;
+    background: linear-gradient(to bottom, #000, transparent);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul
+{
+    display: flex;
+    gap: 2rem;
+    text-transform: uppercase;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a
+{
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+nav ul a:hover{
+    background-color: white;
+    color: black;
+}
+
+.badge a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.6rem;
+    font-size: 20px;
+}
+.badge img
+{
+    width: 4%;
+}
+
 
 .container {
     height: 100vh;
@@ -479,7 +527,6 @@ input:checked+.card[for="c4"] {
 
     .card>.row>.description {
         width: 100%;
-       
     }
 
     .count {
