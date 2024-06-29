@@ -479,7 +479,7 @@ input:checked+.card[for="c4"] {
 
     .card>.row>.description {
         width: 100%;
-        justify-content: space-around;
+       
     }
 
     .count {
@@ -538,7 +538,7 @@ input:checked+.card[for="c4"] {
 
     .card>.row>.description {
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .count {
