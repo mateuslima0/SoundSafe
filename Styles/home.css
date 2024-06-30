@@ -37,50 +37,52 @@ body {
     width: 100%;
     color: #F5F5F5;
 }
-header
-{
+
+header {
     position: fixed;
     width: 100%;
     padding: 15px 50px;
     z-index: 200;
     background: linear-gradient(to bottom, #000, transparent);
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav ul
-{
+
+nav ul {
     display: flex;
     gap: 2rem;
     text-transform: uppercase;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: white;
 }
 
-nav ul a
-{
+nav ul a {
     font-size: 18px;
     padding: 5px 10px;
     border-radius: 20px;
 }
-nav ul a:hover{
+
+nav ul a:hover {
     background-color: white;
     color: black;
 }
 
-.badge a{
+.badge a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 0.6rem;
     font-size: 20px;
 }
-.badge img
-{
+
+.badge img {
     width: 4%;
 }
 
@@ -637,7 +639,7 @@ input:checked+.card[for="c4"] {
 }
 
 .informations-pitch {
-    width: 80%;
+    width: 85%;
     z-index: 1;
 }
 
@@ -651,6 +653,12 @@ input:checked+.card[for="c4"] {
 
 iframe {
     border-radius: 15px;
+}
+
+.title {
+    font-size: calc(30px + 2vw);
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 1290px) and (orientation: portrait) {
