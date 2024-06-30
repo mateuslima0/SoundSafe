@@ -5,12 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/logo.svg">
-    <title>Document</title>
+    <title>SoundSafe</title>
     <link rel="stylesheet" href="Styles/home.css">
 </head>
 
 <body>
-    <section class="container">
+    <header>
+        <nav>
+            <ul>
+                <a  href="#inicio"><li>inicio</li></a>
+                <a href="#sobre"><li>Sobre</li></a>
+                <a href="#motivação"><li>Motivações</li></a>
+                <a href="#pitch"><li>Pitch</li></a>
+            </ul>
+            <div class="badge">
+                <a href="#inicio">
+                    <img src="../assets/logo.svg" alt="">
+                    <span>SoundSafe</span>
+                </a>
+            </div>
+           
+        </nav>
+    </header>
+
+    <section class="container" id="inicio">
         <div class="logo">
             <img src="assets/logo.svg" alt="Logo do projeto">
         </div>
@@ -21,7 +39,7 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section class="container" id="sobre">
         <div class="travessias">
             <img src="assets/travessias.svg" alt="Logo do projeto">
         </div>
@@ -29,16 +47,15 @@
             <div>
                 <p class="item">01. <span style="color: #F02626;" class="item">Sobre</span></p>
                 <h2>SoundSafe</h2>
-                <p class="text">Um semáforo sonoro para auxiliar pessoas com deficiências visuais em travessias e cruzamentos
+                <p class="text">Um semáforo sonoro para auxiliar pessoas com deficiências visuais em travessias e
+                    cruzamentos
                     urbanos. Um projeto que busca uma travessia mais segura e acessível para pessoas com deficiências
                     visuais</p>
             </div>
         </div>
     </section>
-
-
-    <section class="wrapper">
-        <div class="conteiner">
+    <section class="wrapper" id="motivação">
+        <div class="count">
 
             <input type="radio" name="slide" id="c1" checked>
             <label for="c1" class="card cd1">
@@ -57,9 +74,9 @@
                     <!--<div class="icon"></div>-->
                     <div class="description">
                         <h4>Confiança</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                            elit. Aperiam in, veritatis sint obcaecati facilis 
-                            quas iste ratione id optio nisi, maxime possimus ex 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Aperiam in, veritatis sint obcaecati facilis
+                            quas iste ratione id optio nisi, maxime possimus ex
                             qui, minus iure blanditiis ad! Qui, nostrum?</p>
                     </div>
                 </div>
@@ -68,18 +85,49 @@
             <input type="radio" name="slide" id="c3">
             <label for="c3" class="card cd3">
                 <div class="row">
-                    <!--<div class="icon title"></div>-->
+
                     <div class="description">
                         <h4>Acessibilidade</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                            elit. Aperiam in, veritatis sint obcaecati facilis 
-                            quas iste ratione id optio nisi, maxime possimus ex 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Aperiam in, veritatis sint obcaecati facilis
+                            quas iste ratione id optio nisi, maxime possimus ex
+                            qui, minus iure blanditiis ad! Qui, nostrum?</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slide" id="c4">
+            <label for="c4" class="card cd4">
+                <div class="row">
+                    <!--<div class="icon title"></div>-->
+                    <div class="description">
+                        <h4>Nescessidade</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Aperiam in, veritatis sint obcaecati facilis
+                            quas iste ratione id optio nisi, maxime possimus ex
                             qui, minus iure blanditiis ad! Qui, nostrum?</p>
                     </div>
                 </div>
             </label>
         </div>
         </label>
+    </section>
+    <section class="pitch" id="pitch">
+        <div class="container-pitch">
+            <div class="informations-pitch">
+                <p class="item">02. <span style="color: #6AD46E;" class="item">Pitch</span></p>
+                <h3 class="title">Venha conhecer<br>mais sobre o projeto</h3>
+                <p class="text">Para uma sociedade com mais equidade </p>
+            </div>
+        </div>
+        <div class="pitch-player">
+            <div id="videoPitch">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZsEzSBplsCs?si=9MQFJmZ8pY-hTqE3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
     </section>
 </body>
 
