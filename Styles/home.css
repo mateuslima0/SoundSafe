@@ -432,17 +432,17 @@ h1 {
 .txt-mot{
     width: 85%;
     margin-top: 1rem;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Rubik', sans-serif;
 }
 .title-card{
-    font-size: 25px;
+    font-size: 33px;
     font-weight: 100;
 }
 
 .cards-mot{
-    width: 34%; 
-    height: 250px;
+    width: 35%; 
+    height: 280px;
     border: 1px solid #707070;
     border-radius: 20px;
     display: flex;
