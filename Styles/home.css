@@ -811,3 +811,308 @@ iframe {
         width: 70%;
     }
 }
+
+.imgBackground {
+    height: 300px;
+    /* background-image: url("../assets/background.png"); */
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 50%;
+    }
+}
+
+
+.whoWeAre {
+    position: relative;
+    width: 100%;
+
+    .participantsCards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2%;
+        transition: all 0.5s ease-in-out;
+
+        width: 100%;
+        height: 50%;
+
+        .card-team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 500px;
+            aspect-ratio: 1;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0);
+
+            .img {
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                height: 78%;
+                border-radius: 50%;
+
+                img {
+                    transition: all 0.2s ease-out;
+                    width: 100%
+                }
+            }
+
+            .img img:hover {
+                transform: scale(1.2);
+            }
+
+            .informations-team {
+                margin-top: 1%;
+                height: 20%;
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .left {
+                    text-align: center;
+                    h3 {
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        margin-top: 8px;
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+                }
+
+                img {
+                    width: 18%;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    .imgBackground {
+        height: 280px;
+
+        img {
+            width: 55%;
+        }
+    }
+
+    .whoWeAre {
+
+        .participantsCards {
+            margin-top: 2%;
+            width: 100%;
+            height: 50%;
+
+            .card-team {
+                width: 480px;
+                height: 500px;
+                margin: 10px;
+
+                .img {
+                    width: 80%;
+                    height: 78%;
+                }
+
+                .informations-team {
+                    height: 20%;
+                    width: 80%;
+
+                    .left {
+                        h3 {
+                            font-size: 30px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+
+                    img {
+                        width: 18%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .whoWeAre {
+        .participantsCards {
+            .card-team {
+                width: 80%;
+                height: 600px;
+
+                .img {
+                    width: 100%;
+                    height: 78%;
+                }
+
+                .informations-team {
+                    height: 22%;
+                    width: 100%;
+
+                    .left {
+                        h3 {
+                            font-size: 35px;
+                        }
+
+                        p {
+                            font-size: 22px;
+                        }
+                    }
+
+                    img {
+                        width: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .imgBackground {
+        height: 250px;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    .whoWeAre {
+
+        .participantsCards {
+            margin-top: 3%;
+
+            .card-team {
+                width: 100%;
+
+                .img {
+                    width: 95%;
+                    height: 78%;
+                }
+
+                .informations-team {
+                    width: 95%;
+
+                    .left {
+                        h3 {
+                            font-size: 25px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+
+                    img {
+                        width: 12%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 541px) {
+    .imgBackground {
+        height: 200px;
+
+        img {
+            width: 65%;
+        }
+    }
+
+    .whoWeAre {
+
+        .participantsCards {
+            .card-team {
+                .informations-team {
+                    .left {
+                        h3 {
+                            font-size: 25px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+
+                    img {
+                        width: 18%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .imgBackground {
+        height: 200px;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    .whoWeAre {
+
+        .participantsCards {
+            margin-top: 3%;
+
+            .card-team {
+                width: 100%;
+
+                .img {
+                    width: 100%;
+                    height: 78%;
+                }
+
+                .informations-team {
+                    width: 100%;
+
+                    .left {
+                        h3 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+
+                    img {
+                        width: 22%;
+                    }
+                }
+            }
+        }
+    }
+}
