@@ -417,32 +417,64 @@ h1 {
        justify-content: center;
       
     }
-    .container-card1{
-        display: flex;
-        flex-direction: column;
-        flex-direction: row;
-        width: 100%;
-        height: 100%;
-      align-items: center;
-      justify-content: center;
-    }
+   
+}
+.container-card1{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .txt-mot{
     width: 85%;
     margin-top: 1rem;
+    font-size: 15px;
 }
 
 .cards-mot{
+    width: 34%; 
+    height: 220px;
     border: 1px solid #707070;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35%;
-    height: 200px;
-    margin: 30px;
+    margin: 15px;
 }
+/* Monitores acima do meu*/
+@media(min-width:1366px ){
+
+}
+
+@media(max-width: 600px){
+    .container-card1{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+       align-items: center;
+       justify-content: center;
+    }
+    .cards-mot{
+        border: 1px solid #707070;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        width: 90%;
+        height: 165px;
+    }
+
+}
+
+
 
 .count {
     height: 90vh;
