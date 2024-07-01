@@ -253,6 +253,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    div {
+        margin-left: 10%;
+    }
 }
 
 .informations h2 {
@@ -292,7 +296,7 @@ h1 {
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
     .informations h2 {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .text {
@@ -330,7 +334,7 @@ h1 {
 
     .text {
         width: 100%;
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 100;
     }
 }
@@ -349,7 +353,7 @@ h1 {
     }
 
     .text {
-        font-size: 28px;
+        font-size: 25px;
     }
 }
 
@@ -377,7 +381,7 @@ h1 {
     }
 
     .text {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 
@@ -399,7 +403,7 @@ h1 {
     }
 
     .text {
-        font-size: 23px;
+        font-size: 20px;
     }
 }
 
@@ -513,7 +517,7 @@ input:checked+.card[for="c4"] {
     background-image: url(https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2019/04/homem-cego-rua-getty-800x450.jpg);
 }
 
-@media (max-width: 500px) {
+@media (orientation: portrait) {
     .description p {
         font-size: 18px;
         padding-top: 0px;
@@ -717,5 +721,93 @@ iframe {
 
     iframe {
         border-radius: 0px;
+    }
+}
+
+.global-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container-features {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informations-features {
+    width: 80%;
+    z-index: 1;
+}
+
+.image {
+    width: 70%;
+    position: relative;
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 1290px) and (orientation: landscape) {
+    .informations-features {
+        width: 85%;
+    }
+
+    .image {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .global-container {
+        flex-direction: column;
+    }
+
+    .invert {
+        flex-direction: column-reverse;
+    }
+
+    .container-features {
+        width: 100%;
+        height: 50%;
+    }
+
+    .informations-features {
+        width: 80%;
+    }
+
+    .image {
+        width: 55%;
+    }
+
+}
+
+@media only screen and (max-width: 912px) and (orientation: portrait) {
+    .informations-features {
+        width: 87%;
+    }
+
+    .image {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 770px) and (orientation: portrait) {
+    .image {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) and (orientation: portrait) {
+    .image {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    .image {
+        width: 70%;
     }
 }
