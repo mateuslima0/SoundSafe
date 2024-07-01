@@ -402,14 +402,42 @@ h1 {
         font-size: 23px;
     }
 }
-
-
-.wrapper {
+.cards{
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    .title-mot{
+        width: 100%;
+        display: flex;
+       justify-content: center;
+       font-size: 25px;
+    }
+    .container-card1{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+}
+.txt-mot{
+    width: 85%;
+    margin-top: 1rem;
+}
+
+.cards-mot{
+    border: 1px solid #707070;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 200px;
+    margin: 30px;
 }
 
 .count {
@@ -419,6 +447,13 @@ h1 {
     flex-wrap: nowrap;
     justify-content: start;
 }
+
+.cards-mot:hover{
+    border: 1px solid #242424;
+    cursor: pointer;
+}
+
+
 
 .card {
     width: 350px;
