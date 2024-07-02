@@ -412,13 +412,15 @@ h1 {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .title-mot{
         width: 100%;
         display: flex;
        justify-content: center;
        align-items: center;
        font-family: 'Rubik', sans-serif;
-       margin-top: 1.5rem;
+       
     }
    
 }
