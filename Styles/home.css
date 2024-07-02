@@ -412,8 +412,6 @@ h1 {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     .title-mot{
         width: 100%;
         display: flex;
